@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BKS Cincos - Professional UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="login-screen" class="screen active">
+        <div class="login-container">
+            <div class="app-logo">
+                <i class="fas fa-crown"></i> BKS Cincos
+            </div>
+            <input type="email" id="login-email" placeholder="البريد الإلكتروني">
+            <input type="password" id="login-password" placeholder="الرقم السري">
+            <input type="text" placeholder="كود الإحالة (اختياري)">
+            <button id="login-btn" class="btn" style="width: 100%;">تسجيل الدخول</button>
+        </div>
+    </div>
+
+    <div id="main-app" class="screen">
+        <header></header>
+        <main id="main-content"></main>
+        <footer><nav id="nav-bar"></nav></footer>
+    </div>
+    
+    <div id="modal-overlay" class="modal"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
